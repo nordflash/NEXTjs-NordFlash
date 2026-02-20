@@ -5,6 +5,7 @@ export type Project = {
   stack: string[];
   link?: string;
   image?:
+    | "store"
     | "panoramax"
     | "beehives"
     | "expensetracker"
@@ -15,8 +16,27 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    title: "Ecommerce Website",
+    desc: "Full-stack ecommerce platform for selling facial creams and women’s beauty products with authentication, cart, checkout, and payments.",
+    stack: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Prisma",
+      "Neon (PostgreSQL)",
+      "Clerk",
+      "Zod",
+      "Zustand",
+      "Stripe",
+      "Vercel",
+    ],
+    image: "store",
+    link: "https://nordflash-mumu-store.vercel.app/",
+  },
+
+  {
     title: "House Rental Site",
-    desc: "Sanity CMS for gallery and contact, Airbnb links, contact info.",
+    desc: "Rental Propery Landing Page buit with Sanity CMS for gallery and contact, Airbnb links, contact info.",
     stack: ["Next.js", "Typescript", "TailwindCSS", "Sanity", "Vercel"],
     image: "panoramax",
     link: "https://www.panorama-x-lofoten.com/",
@@ -32,7 +52,7 @@ export const projects: Project[] = [
       "Vercel Cron Jobs",
     ],
     image: "beehives",
-    link: "https://bidata.site/scales/GWOO29",
+    link: "https://bidata.site/weight-charts",
   },
   {
     title: "Expense Tracker",

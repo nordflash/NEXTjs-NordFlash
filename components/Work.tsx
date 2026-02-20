@@ -1,4 +1,5 @@
 import Image, { type StaticImageData } from "next/image";
+import store from "../public/assets/store.png";
 import panoramax from "../public/assets/panoramax.png";
 import beehives from "../public/assets/beehives.png";
 import itportfolio from "../public/assets/itportfolio.png";
@@ -7,9 +8,10 @@ import model from "../public/assets/model.png";
 import seasafety from "../public/assets/seasafety.png";
 
 const images: Record<
-  "panoramax" | "beehives" | "expensetracker" | "itportfolio" | "model" | "seasafety",
+  "store" | "panoramax" | "beehives" | "expensetracker" | "itportfolio" | "model" | "seasafety",
   StaticImageData
 > = {
+  store,
   panoramax,
   beehives,
   expensetracker,
