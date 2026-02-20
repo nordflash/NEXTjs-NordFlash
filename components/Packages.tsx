@@ -32,6 +32,7 @@ const PRICING = {
   simple: 500,
   fullstack: 1000,
   custom: 40,
+  
 };
 
 function FeatureItem({
