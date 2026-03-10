@@ -21,7 +21,7 @@ export default function Work() {
   const dataProjects = projects.filter((p) => p.category === "data");
 
   const renderProjects = (list: typeof projects) => (
-    <div className="grid md:grid-cols-3 gap-6 mt-10">
+    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
       {list.map((p) => {
         const imgKey = p.image ?? "store";
         const imgSrc = images[imgKey];
@@ -75,12 +75,12 @@ export default function Work() {
       id="work"
       className="section text-slate-600 border-b border-slate-200 pb-6"
     >
-      <h2 className="section-title text-2xl text-amber-600">Selected Work</h2>
+      <h2 className="section-title text-2xl text-amber-600">Projects</h2>
       <p className="section-sub">
         Projects built for clients and data platforms.
       </p>
 
-      <div className="container mx-auto">
+      <div className="flex flex-col">
         {/* Web apps */}
         <h3 className="text-xl font-semibold mt-10">Web Applications</h3>
         {renderProjects(webProjects)}
