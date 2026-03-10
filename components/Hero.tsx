@@ -11,7 +11,7 @@ export default function Hero() {
           
           <div>
             <motion.h1
-              className="text-4xl md:text-6xl font-bold leading-tight"
+              className="text-3xl md:text-5xl font-bold leading-tight"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
             >
