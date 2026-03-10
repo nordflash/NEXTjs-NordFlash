@@ -4,14 +4,9 @@ export type Project = {
   desc: string;
   stack: string[];
   link?: string;
-  image?:
-    | "store"
-    | "panoramax"
-    | "beehives"
-    | "expensetracker"
-    | "itportfolio"
-    | "model"
-    | "seasafety"; // image key
+  image?: "store" | "panoramax" | "beehives" | "cleaning";
+  // image key
+  category: string;
 };
 
 export const projects: Project[] = [
@@ -32,20 +27,22 @@ export const projects: Project[] = [
     ],
     image: "store",
     link: "https://nordflash-mumu-store.vercel.app/",
+    category: "web",
   },
-
   {
     title: "House Rental Site",
-    desc: "Rental Propery Landing Page buit with Sanity CMS for gallery and contact, Airbnb links, contact info.",
+    desc: "Rental Propery Landing Page buit with Sanity CMS for gallery and contact, Airbnb links, contact info. This Page was built for a property house in the beauitiful Lofoten Arhipelago, Norway",
     stack: ["Next.js", "Typescript", "TailwindCSS", "Sanity", "Vercel"],
     image: "panoramax",
     link: "https://www.panorama-x-lofoten.com/",
+    category: "web",
   },
   {
     title: "Beehive Live Dashboard",
-    desc: "Sensor data app with cron jobs & API polling, live charts, maps, admin dashboard",
+    desc: "Full-stack sensor data website with cron jobs & API polling, live charts, maps, admin dashboard built for Åland' beehives producers (Finland)",
     stack: [
       "Next.js",
+      "JavaScript",
       "MongoDB",
       "Next Auth",
       "API routes",
@@ -53,34 +50,23 @@ export const projects: Project[] = [
     ],
     image: "beehives",
     link: "https://bidata.site/weight-charts",
+    category: "web",
   },
   {
-    title: "Expense Tracker",
-    desc: "Website tracking expenses, where every user has its own expenses",
-    stack: ["NextJs", "Typescript", "Prisma", "Neon", "Clerk"],
-    image: "expensetracker",
-    link: "https://nextjs-expense-tracker-seven.vercel.app/",
-  },
-  {
-    title: "Portfolio IT",
-    desc: "Personal portfolio with projects & contact.",
-    stack: ["Next.js", "TailwindCSS"],
-    image: "itportfolio",
-    link: "https://my-it-portfolio.netlify.app/",
-  },
-  {
-    title: "Modeling Portfolio",
-    desc: "Fitness and modeling portfolio built with React and Styled Components, showcasing style, health, and elegance.",
-    stack: ["React", "Styled Components"],
-    image: "model",
-    link: "https://radu-3dportfolio.netlify.app/",
-  },
-  {
-    title: "Sea Safety",
-    desc: "Sea Safety website built for users to access training materials and embedded YouTube videos.",
-    stack: ["Next.js", "Typescript", "TailwindCSS", "Prisma", "Neon"],
-    image: "seasafety",
-    link: "https://nex-tjs-sea-safety.vercel.app/login",
+    title: "Cleaning Company Landing Page",
+    desc: "This is a Cleaning Company Landing Page website that provides cleaning services for houses or offices in Bucharest, Romania.",
+    stack: ["Next.js", "Typescript", "TailwindCSS", "Vercel"],
+    image: "cleaning",
+    link: "https://nex-tjs-cleaning-company.vercel.app/",
+    category: "web"
   },
   // add more as needed...
+  // {
+  //   title: "Sales Analytics Dashboard",
+  //   desc: "Business Intelligence dashboard built with Power BI using Snowflake warehouse.",
+  //   image: "store",
+  //   stack: ["Snowflake", "Power BI", "SQL"],
+  //   link: "",
+  //   category: "data",
+  // },
 ];

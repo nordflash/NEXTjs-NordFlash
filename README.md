@@ -19,6 +19,7 @@ Push to GitHub, import on Vercel, attach **nordflash.com**.
 - npm install framer-motion
 - npm install lucide-react
 - npm i react-icons
+- npm install simple-icons
 
 # NEXT
 

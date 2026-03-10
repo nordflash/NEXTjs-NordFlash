@@ -9,7 +9,10 @@ import {
   SiPostgresql,
   SiMongodb,
   SiVercel,
+  SiSnowflake,
 } from "react-icons/si";
+import { VscAzureDevops } from "react-icons/vsc";
+import { FaChartBar } from "react-icons/fa"; // fallback for Power BI
 import { FaUserShield } from "react-icons/fa";
 import { MdOutlineLogin } from "react-icons/md";
 import { GiCrownedSkull } from "react-icons/gi";
@@ -25,6 +28,10 @@ const tech = [
   { name: "MongoDB", icon: <SiMongodb /> },
   { name: "Zustand", icon: <GiCrownedSkull /> },
   { name: "Vercel", icon: <SiVercel /> },
+  // Data Engineering & BI
+  { name: "Microsoft Fabric", icon: <VscAzureDevops /> },
+  { name: "Snowflake", icon: <SiSnowflake /> },
+  { name: "Power BI Dashboards", icon: <FaChartBar /> },
 ];
 
 const container: Variants = {
@@ -43,7 +50,7 @@ const item: Variants = {
     scale: 1,
     transition: {
       duration: 0.35,
-      ease: [0.16, 1, 0.3, 1], // cubic-bezier (easeOut)
+      ease: [0.16, 1, 0.3, 1],
     },
   },
 };
@@ -56,7 +63,7 @@ export default function Stack() {
     >
       <h2 className="section-title text-2xl text-amber-600">Tech Stack</h2>
       <p className="section-sub">
-        Modern tools — simple, maintainable, and fast.
+        Modern tools for web development, data engineering, and business intelligence — simple, maintainable, and fast.
       </p>
 
       <motion.div
