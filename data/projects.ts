@@ -4,7 +4,7 @@ export type Project = {
   desc: string;
   stack: string[];
   link?: string;
-  image?: "store" | "panoramax" | "beehives" | "cleaning";
+  image?: "store" | "panoramax" | "beehives" | "cleaning" | "fitness";
   // image key
   category: string;
 };
@@ -29,15 +29,15 @@ export const projects: Project[] = [
     link: "https://nordflash-mumu-store.vercel.app/",
     category: "web",
   },
-  {
-    title: "House Rental Site",
-    desc: "Rental Propery Landing Page buit with Sanity CMS for gallery and contact, Airbnb links, contact info. This Page was built for a property house in the beauitiful Lofoten Arhipelago, Norway",
-    stack: ["Next.js", "Typescript", "TailwindCSS", "Sanity", "Vercel"],
-    image: "panoramax",
-    link: "https://www.panorama-x-lofoten.com/",
-    category: "web",
+    {
+    title: "Fitness Personal Training Website",
+    desc: "This is a Fitness Personal Training Landing Page website that provides personal training services with different monthly plans",
+    stack: ["Next.js", "Typescript", "TailwindCSS", "Clerk (authentication & stripe)", "Prisma", "Neon (PostgreSQL)", "Vercel"],
+    image: "fitness",
+    link: "https://nex-tjs-fitness-stephano.vercel.app/",
+    category: "web"
   },
-  {
+    {
     title: "Beehive Live Dashboard",
     desc: "Full-stack sensor data website with cron jobs & API polling, live charts, maps, admin dashboard built for Åland' beehives producers (Finland)",
     stack: [
@@ -53,6 +53,14 @@ export const projects: Project[] = [
     category: "web",
   },
   {
+    title: "House Rental Site",
+    desc: "Rental Propery Landing Page buit with Sanity CMS for gallery and contact, Airbnb links, contact info. This Page was built for a property house in the beauitiful Lofoten Arhipelago, Norway",
+    stack: ["Next.js", "Typescript", "TailwindCSS", "Sanity", "Vercel"],
+    image: "panoramax",
+    link: "https://www.panorama-x-lofoten.com/",
+    category: "web",
+  },
+  {
     title: "Cleaning Company Landing Page",
     desc: "This is a Cleaning Company Landing Page website that provides cleaning services for houses or offices in Bucharest, Romania.",
     stack: ["Next.js", "Typescript", "TailwindCSS", "Vercel"],
@@ -60,6 +68,8 @@ export const projects: Project[] = [
     link: "https://nex-tjs-cleaning-company.vercel.app/",
     category: "web"
   },
+
+
   // add more as needed...
   // {
   //   title: "Sales Analytics Dashboard",

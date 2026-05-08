@@ -3,15 +3,17 @@ import store from "../public/assets/store.png";
 import panoramax from "../public/assets/panoramax.png";
 import beehives from "../public/assets/beehives.png";
 import cleaning from "../public/assets/cleaning.png";
+import fitness from "../public/assets/fitness.png";
 
 const images: Record<
-  "store" | "panoramax" | "beehives" | "cleaning",
+  "store" | "panoramax" | "beehives" | "cleaning" | "fitness",
   StaticImageData
 > = {
   store,
   panoramax,
   beehives,
   cleaning,
+  fitness,
 };
 
 import { projects } from "@/data/projects";
