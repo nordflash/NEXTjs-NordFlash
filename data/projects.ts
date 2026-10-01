@@ -49,7 +49,7 @@ export const projects: Project[] = [
       "Vercel Cron Jobs",
     ],
     image: "beehives",
-    link: "https://bidata.site/weight-charts",
+    link: "https://nex-tjs-bee-hives-project.vercel.app//weight-charts",
     category: "web",
   },
   {
